@@ -16,7 +16,7 @@ init_rand_matrix(float *mat, int size)
 void
 main (int argc, char **argv)
 {
-	int n = 8000;
+	int n = 1000;
 	if (argc > 1) {
 		n = atoi(argv[1]);
 	}
