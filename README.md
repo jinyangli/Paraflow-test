@@ -29,9 +29,13 @@ Setting the `KMP_AFFINITY` environmental variable constrains the OpenMP processe
 seems to reduce performance variation.
 
 One should also reduce performance variation by disabling frequence scaling. Below are the steps:
+
 `sudo apt-get install linux-tools-generic`
+
 `sudo cpupower frequency-set --governor performance` 
+
 To check the measured frequence, do 
+
 `cpupower --cpu all frequency-info --freq --human`
 
 Unfortunately, the measured frequencies still vary on my desktop after the above steps and the performance results incur quite a bit of variation from 
